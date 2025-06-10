@@ -431,6 +431,7 @@ for(let i =1;i<=rows;i++){
 }
 console.log(pattern)
 */
+// this is a change 
 
 
 //hollow pyramid
