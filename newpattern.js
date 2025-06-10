@@ -453,3 +453,45 @@ for(let i =1;i<=rows;i++){
 console.log(pattern)
 */
 
+//hollow increasing alphabet pyramid
+/*
+let rows = 5;
+let pattern = "";                
+
+for (let i = 1; i <= rows; i++) {
+  let ch = String.fromCharCode('A'.charCodeAt(0) + i - 1);
+
+  for (let j = 1; j <= (rows * 2) - 1; j++) {
+    if (i == 5 || j == (rows - i) + 1 || j == (rows + i) - 1) {
+      pattern += ch;
+    } else {
+      pattern += " ";
+    }
+  }
+  pattern += "\n";
+}
+
+console.log(pattern);
+*/
+
+
+// plus pattern
+/*
+let rows=5;
+let pattern="";
+let mid=(rows+1)/2; 
+
+for(let i =1;i<=rows;i++){
+  for(let j=1;j<=rows;j++){
+    if(i==mid || j==mid ){
+      pattern+="*";
+    }
+    else{
+      pattern+=" ";
+    }
+  }
+  pattern+="\n";
+}
+console.log(pattern)
+*/
+
