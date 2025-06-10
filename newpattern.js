@@ -414,7 +414,7 @@ console.log(pattern);
 */
 
 //hollow square pattern
-
+/*
 let rows=9;
 let pattern="";
 
@@ -430,5 +430,25 @@ for(let i =1;i<=rows;i++){
   pattern+="\n";
 }
 console.log(pattern)
+*/
+
+
+//hollow pyramid
+let rows=9;
+let pattern="";
+
+for(let i =1;i<=rows;i++){
+  for(let j=1;j<=(rows * 2)-1;j++){
+    if(i==1 || i==rows || j==1 || j==rows){
+      pattern+="*";
+    }
+    else{
+      pattern+=" ";
+    }
+  }
+  pattern+="\n";
+}
+console.log(pattern)
+
 
 
