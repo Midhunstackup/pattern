@@ -169,3 +169,72 @@ for (let i = 0; i < a.length; i++) {
 
 // Replace Negative Numbers with 0
 // Modify the array so all negative numbers become 0.
+/*
+let a =[1,2,-3,4,-5];
+for(let i =0;i<a.length;i++){
+    if(a[i]<0){
+        a[i]=0;
+    }
+    console.log(a[i])
+}
+*/
+
+
+// Multiply All Elements
+// Multiply all elements and print the product.
+
+/*
+let a=[1,2,3,4,5];
+let product =1;
+
+for(let i = 0;i<a.length;i++){
+    product *= a[i]
+}
+console.log(product);
+*/
+
+
+//Find First and Last Element
+//Display only the first and last element of the array.
+
+/*
+let a=[1,2,3,4,5];
+
+console.log(a[0]);
+console.log(a[a.length-1]);
+*/
+
+
+// Double Each Element
+// Create a new array with each element doubled.
+
+/*
+let a=[1,2,3,4,5];
+let doubledArray = [];
+
+for(let i=0;i<a.length;i++){
+    doubledArray[i]=a[i]*2
+}
+console.log(doubledArray);
+*/
+
+//  Print Only Odd Numbers
+// Display only the odd numbers from the array.
+
+/*
+let a=[1,2,3,4,5];
+for(let i =0;i<a.length;i++){
+    
+    if(a[i]%2 !==0){
+        console.log(a[i]);
+    }
+}
+*/
+
+                                 //====================    Intermediate 1D Array Questions   =======================================//
+
+
+// Frequency Count
+// Count how many times each number appears in the array.
+ 
+
