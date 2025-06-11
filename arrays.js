@@ -157,3 +157,72 @@ for (let j = 0; j < 3; j++) {
  console.log(sum);
 
  */
+
+ //Q10: Check if a given number is present in a 2D array.
+/*
+ let a = [
+  [1, 21, 3],
+  [335, 5, 66],
+  [7, 8, 9]
+];
+
+ let value = 10;
+ let found = false;
+
+ for (let i = 0; i < 3; i++){
+    for (let j = 0; j < 3; j++){
+        if(a[i][j]===value){
+            found = true;
+            console.log(`Value ${value} found at position [${i}][${j}]`);
+            break;
+        }
+    } 
+    if(found)break;
+ } 
+
+ if(!found){
+    console.log(`Value ${value} not found in array`);
+ }
+
+ */
+ 
+//Q11: Find the transpose of a matrix
+/*
+let rows = 2;
+let cols = 3;
+
+let matrix = [
+  [1, 2, 3],
+  [4, 5, 6]
+];
+
+let transpose = []; // Initialize empty 3x2 transpose matrix
+
+for (let j = 0; j < cols; j++) {
+  transpose[j] = []; // create new row
+  for (let i = 0; i < rows; i++) {
+    transpose[j][i] = matrix[i][j];
+  }
+}
+
+console.log("Original Matrix:");
+console.log(matrix);
+console.log("Transposed Matrix:");  // if i use console.table(matrix) it will print in tbale format
+console.log(transpose);
+*/
+
+ 
+
+//Q11: Print the primary diagonal elements
+/*
+let matrix = [
+  [1, 2, 3, 1],
+  [4, 5, 6, 2],
+  [7, 8, 9, 3],
+  [7, 8, 9, 4]
+];
+
+for (let i = 0; i < matrix.length; i++) {
+  console.log(matrix[i][i]);
+}
+*/
