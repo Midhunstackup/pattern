@@ -73,3 +73,87 @@ console.log(count)
 
 */
 
+//Q6: Calculate and display the sum of each row in a 2D array.
+/*
+let a = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+for (let i = 0; i < 3; i++) {
+  let rowSum = 0;
+  for (let j = 0; j < 3; j++) {
+    rowSum += a[i][j];
+  }
+  console.log(`Sum of row ${i + 1}: ${rowSum}`);
+}
+*/
+
+
+
+
+//BONUS !! Q7: Calculate and display the sum of all values in a 2D array.[row wise]
+/*
+
+let a = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+let rowSum = 0;
+
+for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
+    rowSum += a[i][j];
+  }
+  
+}
+ console.log(rowSum);
+ */
+
+
+//Q8: Calculate and display the sum of each column in a 2D array.
+
+/*
+
+let a = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+
+for (let j = 0; j < 3; j++) {
+    let sum = 0;
+
+
+  for (let i = 0; i < 3; i++) {
+    sum += a[i][j];
+  }
+  console.log(sum);
+}
+ 
+*/
+
+// BONUS !! Q9: column wise addition in 2D array         [[ROW WISE ADDITION AND COLUMN WISE ADDITION WILL RESULT IN SAME OUTPUT]]
+/* 
+let a = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+let sum = 0;
+for (let j = 0; j < 3; j++) {
+    
+
+
+  for (let i = 0; i < 3; i++) {
+    sum += a[i][j];
+  }
+  
+}
+ console.log(sum);
+
+ */

@@ -1,7 +1,13 @@
-let a = [10,11,12,13,14,15];
-for(let i =0;i<Math.floor(a.lenght/2);i++){
-    let temp =a[i];
-    a[i]= a[a.length -1 - i];
-    a[a.length -1 -i]= temp;
+let a = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+let rowSum = 0;
+for (let i = 0; i < 3; i++) {
+  
+  for (let j = 0; j < 3; j++) {
+    rowSum += a[i][j];
+  }
+  console.log(rowSum);
 }
-console.log(a)
