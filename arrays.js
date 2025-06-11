@@ -213,7 +213,7 @@ console.log(transpose);
 
  
 
-//Q11: Print the primary diagonal elements
+//Q12: Print the primary diagonal elements
 /*
 let matrix = [
   [1, 2, 3, 1],
