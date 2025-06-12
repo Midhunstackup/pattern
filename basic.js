@@ -487,3 +487,73 @@ console.log("Right rotated:", arr);
 // }
 
 // console.log("Missing number is:", total - sum);
+
+
+
+
+// Learning palindrome
+/*
+let n=123221;
+let o=n;
+let rev=0;
+
+while(n>0){
+    let digit=n%10;
+    rev=rev*10+digit;
+    n= Math.floor(n/10);
+}
+
+if(o===rev){
+    console.log('palindrome');
+}else{
+     console.log('not palindrome');
+}
+*/
+
+//learning merging
+/*
+let a = [1,2,3];
+let b = [4,5,6];
+
+let Merge=[];
+
+for(let i =0; i < a.length; i++) {
+    Merge[Merge.length] = a[i];
+}
+
+for(let i =0; i < b.length; i++) {
+    Merge[Merge.length] = b[i];
+}
+
+console.log(Merge);
+*/
+
+
+//learning removing duplicates
+
+/*
+let arr = [1,2,2,3,4,4,5];  // array containing duplicates
+let unique = [];          // we need to create a variable only containing unique values
+let uniqueIndex = 0;   // This keeps track of the next position to insert a new unique number in the unique arra
+
+
+for (let i = 0; i < arr.length; i++) {  //looping through each element of original array 
+    let isDuplicate = false;  //A flag used to track whether the current arr[i] already exists in the unique array.
+
+    for (let j = 0; j < uniqueIndex; j++) {  //checks every item in unique so far to see if the current arr[i] has already been added.
+        if (arr[i] === unique[j]) {  //If the current element is equal to any element already in the unique array…
+            isDuplicate = true;      // mark it as a duplicate.
+            break;                   //Exit the inner loop early since we already found it's a duplicate — no need to check more.
+        } 
+    }
+
+    if (!isDuplicate) {              // If the element is not found in the unique array…
+        unique[uniqueIndex] = arr[i];  // we add it to the unique array using direct indexing instead of push().
+        uniqueIndex++;                //Move the pointer (uniqueIndex) forward for the next new unique element.
+    }
+}
+
+console.log("Unique elements:", unique);
+*/
+
+
