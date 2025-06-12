@@ -1,13 +1,15 @@
-let a = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9]
-];
-let rowSum = 0;
-for (let i = 0; i < 3; i++) {
-  
-  for (let j = 0; j < 3; j++) {
-    rowSum += a[i][j];
-  }
-  console.log(rowSum);
+let a = [1,2,3,4,5];
+let k= 4;
+let n= a.length;
+
+let rotated=[];
+
+for(let i= k; i<n; i++){
+    rotated[rotated.length]=a[i];
 }
+
+for(let i=0;i<k;i++){
+    rotated[rotated.length]=a[i];
+}
+
+console.log(rotated)

@@ -584,3 +584,53 @@ for (let i = 0; i < arr.length; i++) {
   }
 }
 */
+
+//Learning Rotate Array Left by k Steps
+
+/*
+let arr = [1, 2, 3, 4, 5];
+let k = 2;                            // no of times you waant to rotate
+let n = arr.length;
+
+// Make a new array to store result manually
+let rotated = [];
+
+// First copy elements from index k to end
+for (let i = k; i < n; i++) {
+  rotated[rotated.length] = arr[i]; // similar to push
+}
+
+// Then copy first k elements at the end
+for (let i = 0; i < k; i++) {
+  rotated[rotated.length] = arr[i];
+}
+
+console.log("Left rotated:", rotated);
+*/
+
+
+
+//Learning Rotate Array Right by k Steps
+/*
+let arr = [1, 2, 3, 4, 5];
+let k = 4;
+let n = arr.length;
+
+// Handle case when k > n
+k = k % n;
+
+let rotated = [];
+
+// Copy the last k elements to the front
+for (let i = n - k; i < n; i++) {
+  rotated[rotated.length] = arr[i];
+}
+
+// Copy the first n - k elements after that
+for (let i = 0; i < n - k; i++) {
+  rotated[rotated.length] = arr[i];
+}
+
+console.log("Right rotated by 4:", rotated);
+*/
+
