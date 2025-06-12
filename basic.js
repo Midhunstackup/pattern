@@ -370,23 +370,26 @@ console.log("Sorted array:", arr);
 
 // Find All Prime Numbers
 // Display only the prime numbers in the array.
+// =======================================================
+/*
+let arr = [2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// let arr = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+function isPrime(n) {
+  if (n < 2) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
 
-// function isPrime(n) {
-//   if (n < 2) return false;
-//   for (let i = 2; i <= Math.sqrt(n); i++) {
-//     if (n % i === 0) return false;
-//   }
-//   return true;
-// }
-
-// for (let i = 0; i < arr.length; i++) {
-//   if (isPrime(arr[i])) {
-//     console.log(arr[i]);
-//   }
-// }
-
+for (let i = 0; i < arr.length; i++) {
+  if (isPrime(arr[i])) {
+    console.log(arr[i]);
+  }
+}
+  */
+ 
+// =======================================================
 
 // Rotate Array Left by k Steps
 // Rotate the elements to the left k times
@@ -557,3 +560,27 @@ console.log("Unique elements:", unique);
 */
 
 
+//Learning finding only odd in an array
+/*
+let arr = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+for (let i = 0; i < arr.length; i++) {
+  let num = arr[i];
+  let isPrime = true;
+
+  if (num < 2) {
+    isPrime = false; // Numbers less than 2 are not prime
+  } else {
+    for (let j = 2; j < num; j++) {
+      if (num % j === 0) {
+        isPrime = false; // If divisible by any number other than 1 and itself
+        break; // No need to check further
+      }
+    }
+  }
+
+  if (isPrime) {
+    console.log(num); // Print if number is prime
+  }
+}
+*/
