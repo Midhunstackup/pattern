@@ -535,24 +535,24 @@ console.log(Merge);
 //learning removing duplicates
 
 /*
-let arr = [1,2,2,3,4,4,5];  // array containing duplicates
-let unique = [];          // we need to create a variable only containing unique values
-let uniqueIndex = 0;   // This keeps track of the next position to insert a new unique number in the unique arra
+let arr = [1,2,2,3,4,4,5];                       // array containing duplicates
+let unique = [];                                 // we need to create a variable only containing unique values
+let uniqueIndex = 0;                             // This keeps track of the next position to insert a new unique number in the unique arra
 
 
-for (let i = 0; i < arr.length; i++) {  //looping through each element of original array 
-    let isDuplicate = false;  //A flag used to track whether the current arr[i] already exists in the unique array.
+for (let i = 0; i < arr.length; i++) {           //looping through each element of original array 
+    let isDuplicate = false;                     //A flag used to track whether the current arr[i] already exists in the unique array.
 
-    for (let j = 0; j < uniqueIndex; j++) {  //checks every item in unique so far to see if the current arr[i] has already been added.
-        if (arr[i] === unique[j]) {  //If the current element is equal to any element already in the unique array…
-            isDuplicate = true;      // mark it as a duplicate.
-            break;                   //Exit the inner loop early since we already found it's a duplicate — no need to check more.
+    for (let j = 0; j < uniqueIndex; j++) {      //checks every item in unique so far to see if the current arr[i] has already been added.
+        if (arr[i] === unique[j]) {              //If the current element is equal to any element already in the unique array…
+            isDuplicate = true;                  // mark it as a duplicate.
+            break;                               //Exit the inner loop early since we already found it's a duplicate — no need to check more.
         } 
     }
 
-    if (!isDuplicate) {              // If the element is not found in the unique array…
-        unique[uniqueIndex] = arr[i];  // we add it to the unique array using direct indexing instead of push().
-        uniqueIndex++;                //Move the pointer (uniqueIndex) forward for the next new unique element.
+    if (!isDuplicate) {                          // If the element is not found in the unique array…
+        unique[uniqueIndex] = arr[i];            // we add it to the unique array using direct indexing instead of push().
+        uniqueIndex++;                           //Move the pointer (uniqueIndex) forward for the next new unique element.
     }
 }
 
