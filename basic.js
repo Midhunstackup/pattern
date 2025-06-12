@@ -426,71 +426,71 @@ console.log("Right rotated:", arr);
 // Check Sorted Order
 // Check if the array is sorted in ascending order.
 
+/*
+let arr = [1, 2, 3, 4, 5];
+let sorted = true;
 
-// let arr = [1, 2, 3, 4, 5];
-// let sorted = true;
+for (let i = 1; i < arr.length; i++) { //Because you are comparing each element with the one before it:
+  if (arr[i] < arr[i - 1]) {
+    sorted = false;
+    break;
+  }
+}
 
-// for (let i = 1; i < arr.length; i++) {
-//   if (arr[i] < arr[i - 1]) {
-//     sorted = false;
-//     break;
-//   }
-// }
-
-// console.log(sorted ? "Sorted" : "Not Sorted");
-
+console.log(sorted ? "Sorted" : "Not Sorted");
+*/
 
 // Sum of Max and Min Element
 // Find and print the sum of the largest and smallest elements.
 
+/*
+let arr = [4, 2, 9, 1, 7,10];
+let max = arr[0];
+let min = arr[0];
+ 
+for (let i = 1; i < arr.length; i++) {
+  if (arr[i] > max) max = arr[i];
+  if (arr[i] < min) min = arr[i];
+}
 
-// let arr = [4, 2, 9, 1, 7];
-// let max = arr[0];
-// let min = arr[0];
-
-// for (let i = 1; i < arr.length; i++) {
-//   if (arr[i] > max) max = arr[i];
-//   if (arr[i] < min) min = arr[i];
-// }
-
-// console.log("Sum of max and min:", max + min);
-
+console.log("Sum of max and min:", max + min);
+*/
 
 // Shift All Zeros to End
 // Move all zeros to the end without changing order of non-zero elements.
 
+/*
+let arr = [0, 1, 0, 3, 12];
+let result = [];
 
-// let arr = [0, 1, 0, 3, 12];
-// let result = [];
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] !== 0) {
+    result.push(arr[i]);
+  }
+}
 
-// for (let i = 0; i < arr.length; i++) {
-//   if (arr[i] !== 0) {
-//     result.push(arr[i]);
-//   }
-// }
+while (result.length < arr.length) {
+  result.push(0);
+}
 
-// while (result.length < arr.length) {
-//   result.push(0);
-// }
-
-// console.log("Zeros shifted:", result);
-
+console.log("Zeros shifted:", result);
+*/
 
 // Find Missing Number
 // Array contains n−1 numbers from 1 to n. Find the missing number.
 
+/*
+let arr = [1, 2, 4, 5]; // missing 3
+let n = arr.length + 1;
+let total = (n * (n + 1)) / 2;
 
-// let arr = [1, 2, 4, 5]; // missing 3
-// let n = arr.length + 1;
-// let total = (n * (n + 1)) / 2;
+let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+  sum += arr[i];
+}
 
-// let sum = 0;
-// for (let i = 0; i < arr.length; i++) {
-//   sum += arr[i];
-// }
-
-// console.log("Missing number is:", total - sum);
-
+console.log("Missing number is:", total - sum);
+*/
 
 
 
@@ -634,3 +634,28 @@ for (let i = 0; i < n - k; i++) {
 console.log("Right rotated by 4:", rotated);
 */
 
+
+
+//Learning  shifting all zeroes to end 
+/*
+
+let arr = [0, 1, 0, 3, 12];
+let result = [];
+let count = 0;  // this keeps track of how many non-zero elements are added
+
+// Add non-zero elements to result
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] !== 0) {
+    result[count] = arr[i];  // add to result at current position
+    count++;                 // move to next position
+  }
+}
+
+// Fill the rest with zeros
+while (count < arr.length) {
+  result[count] = 0;
+  count++;
+}
+
+console.log("Zeros shifted:", result);
+*/
