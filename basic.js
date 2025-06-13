@@ -65,6 +65,22 @@ for(let i =0;i<a.length;i++){
 console.log(count);
 */
 
+//another solution
+// let a=[1,-2,3,-4,5];
+// let count = 0;
+
+// for(let i =0; i < a.length;i++){
+//     if(a[i]>0){
+//         count++;
+//        console.log(`These are the following positive numbers: ${a[i]}`);
+
+//     }
+// }
+//  console.log(`total: ${count}`);
+
+
+
+
 //Find Maximum Element
 //Display the largest number in the array.
 
@@ -368,6 +384,28 @@ for (let i = 0; i < arr.length - 1; i++) {  //arr.length - 1 is used because aft
 console.log("Sorted array:", arr);
 */
 
+//or sorthing this way
+/*
+let arr = [5, 3, 8, 1, 4];
+
+for (let i = 0; i < arr.length; i++) {   // Repeats the sorting process.
+  for (let j = 0; j < arr.length - 1; j++) {  // Goes through each pair in the array.
+    if (arr[j] > arr[j + 1]) {   //if two elements are out of order, swap them
+      
+      
+        // Swap using a temp variable
+      let temp = arr[j];
+      arr[j] = arr[j + 1];
+      arr[j + 1] = temp;
+    }
+  }
+}
+
+console.log(arr); 
+*/
+
+
+
 // Find All Prime Numbers
 // Display only the prime numbers in the array.
 // =======================================================
@@ -533,8 +571,8 @@ console.log(Merge);
 
 
 //learning removing duplicates
-
 /*
+
 let arr = [1,2,2,3,4,4,5];                       // array containing duplicates
 let unique = [];                                 // we need to create a variable only containing unique values
 let uniqueIndex = 0;                             // This keeps track of the next position to insert a new unique number in the unique arra
@@ -552,15 +590,15 @@ for (let i = 0; i < arr.length; i++) {           //looping through each element 
 
     if (!isDuplicate) {                          // If the element is not found in the unique array…
         unique[uniqueIndex] = arr[i];            // we add it to the unique array using direct indexing instead of push().
-        uniqueIndex++;                           //Move the pointer (uniqueIndex) forward for the next new unique element.
+        uniqueIndex = uniqueIndex + 1;                         //Move the pointer (uniqueIndex) forward for the next new unique element.
     }
 }
 
 console.log("Unique elements:", unique);
+
 */
 
-
-//Learning finding only odd in an array
+//Learning finding only prime in an array
 /*
 let arr = [2, 3, 4, 5, 6, 7, 8, 9, 10];
 
