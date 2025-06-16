@@ -519,7 +519,7 @@ console.log("Zeros shifted:", result);
 
 /*
 let arr = [1, 2, 4, 5]; // missing 3
-let n = arr.length + 1;
+let n = arr.length + 1; //5 
 let total = (n * (n + 1)) / 2;
 
 let sum = 0;

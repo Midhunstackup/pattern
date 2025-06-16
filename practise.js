@@ -142,19 +142,39 @@
 // console.log(uniqueArr); 
 
 // sort array 
-let arr = [5, 3, 8, 1, 4];
+// let arr = [5, 3, 8, 1, 4];
 
-for (let i = 0; i < arr.length; i++) {   // Repeats the sorting process.
-  for (let j = 0; j < arr.length - 1; j++) {  // Goes through each pair in the array.
-    if (arr[j] > arr[j + 1]) {   //if two elements are out of order, swap them
+// for (let i = 0; i < arr.length; i++) {   // Repeats the sorting process.
+//   for (let j = 0; j < arr.length - 1; j++) {  // Goes through each pair in the array.
+//     if (arr[j] > arr[j + 1]) {   //if two elements are out of order, swap them
       
       
-        // Swap using a temp variable
-      let temp = arr[j];
-      arr[j] = arr[j + 1];
-      arr[j + 1] = temp;
-    }
-  }
-}
+//         // Swap using a temp variable
+//       let temp = arr[j];
+//       arr[j] = arr[j + 1];
+//       arr[j + 1] = temp;
+//     }
+//   }
+// }
 
-console.log(arr); 
+// console.log(arr); 
+
+
+// display only prime numbers
+// let arr = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// for (let i = 0; i < arr.length; i++) {
+//   let num = arr[i];
+//   let prime = true;
+
+//   for (let j = 2; j < num; j++) {
+//     if (num % j === 0) {
+//       prime = false;
+//       break;
+//     }
+//   }
+
+//   if (prime && num > 1) {
+//     console.log(num);
+//   }
+// }
